@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Addition</h1>
+	<label for="Number">First Number:</label>
+	<input type="text" id="first">	
+	<label for="Number">Second Number:</label>
+	<input type="text" id="second" >	
+	<p id="demo"></p>
+	<p id="demo1"></p>
+	<input type="button" value="Click" onclick=capture()>  
+	<script>
+		function capture()
+		{
+		  var a = document.getElementById('first').value;
+		  var b = document.getElementById('second').value;
+		  display(a, b);
+		}
+		function display(a, b)
+		{
+		  let c = parseInt(a) + parseInt(b);				
+		  document.getElementById("demo").innerHTML = a+b;
+		  document.getElementById("demo1").innerHTML = c;
+		}	
+	</script>
+</body>
+</html>
